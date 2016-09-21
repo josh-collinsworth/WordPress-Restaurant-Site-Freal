@@ -306,7 +306,7 @@ h5 a:hover, #bio a:hover, #email:hover, a h5:hover, .disclaimer a:hover, p a:hov
 	color: #ffda39;
 }
 
-h2 {
+h2, h3, h4 {
 	text-align: center;
 	font-family: "Pathway Gothic One", Verdana, Helvetica, Arial, sans-serif;
 	font-weight: 100;
@@ -318,6 +318,10 @@ h2 {
 	display: block;
 	line-height: 1.4em;
 	letter-spacing: .05rem;
+}
+
+h3 {
+	font-size: 1.4rem;
 }
 
 section#aboutsection {
@@ -597,7 +601,7 @@ input, textarea {
 	padding: 10% 0% 10% 0%;
 }
 
-h3 {
+#homebutton {
 	margin: 5% auto 10% auto;
 	padding: 26px;
 	border: 3px solid #fff;
@@ -615,7 +619,7 @@ h3 {
 	transition: background-color .4s ease, color .4s ease;
 }
 
-h3:hover {
+#homebutton:hover {
 	background-color: #fff;
 	color: #fa8a3b
 }

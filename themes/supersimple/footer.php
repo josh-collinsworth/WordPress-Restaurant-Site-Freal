@@ -10,6 +10,7 @@
         ?>
     </div>
 	<?php wp_footer(); ?>
+    <small>Designed by Josh Collinsworth</small>
 </footer>
 </body>
 </html>
