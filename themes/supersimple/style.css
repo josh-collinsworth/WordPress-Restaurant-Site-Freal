@@ -1,0 +1,785 @@
+/*
+
+Theme Name: Super Simple
+Text Domain: super-simple
+Author: Josh Collinsworth
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.example {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End CSS Reset; begin custom styles */
+
+
+p, h1, h2, h3, h4, h5, h6, ul, a, input, form {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p {
+	font-size: .7rem;
+	line-height: 1.6em;
+	font-family: "Merriweather", "Georgia", Serif;
+	margin-bottom: 1.4em;
+}
+
+html {
+	font-size: 22px;
+}
+
+body {
+	margin: 0;
+	border: 0;
+	background-color: #fa8a3b;
+	line-height: 32px;
+} 
+
+nav ul li a {
+	font-family: "Pathway Gothic One", Verdana, Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 1rem;
+	display: inline-block;
+	margin: 0 0 0 2em;
+	border-bottom: 2px #815e5a solid;
+	transition: border-bottom .7s ease;
+	-webkit-transition: border-bottom .7s ease;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	line-height: 1.2em;
+	padding-bottom: 1%;
+	letter-spacing: .05rem;
+}
+
+header a, footer a{
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	border-bottom: 2px #ffda39 solid;
+
+}
+
+nav ul li a:focus {
+	border-bottom: 2px #ffda39 solid;
+}
+	
+
+header, footer {
+	border: none;
+	margin: 0;
+	background-color: #815e5a;
+	padding: 3% 0% 3% 0%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+}
+
+#logo {
+	display:inline-block;
+	margin: 0;
+}
+
+#logo a{
+	padding-bottom: 1%;
+	border-bottom: 2px #815e5a solid;
+	transition: border-bottom .7s ease;
+	-webkit-transition: border-bottom .7s ease;
+}
+
+#logo a:hover{
+	border-bottom: 2px #ffda39 solid;
+}
+
+#logo :hover {
+	border-bottom: #8CE129;
+}
+
+#logo img{
+	width: 200px;
+}
+
+#mainbody {
+	width: 100%;
+	background-color: #fa8a3b;
+	margin: 0;
+}
+
+.content {
+	margin: auto;
+	width: 80%;
+	overflow: auto;
+}
+
+.pagehead {
+	font-family: "Pathway Gothic One", Verdana, Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	font-size: 2.6rem;
+	text-decoration: none;
+	font-weight: 100;
+	text-align: center;
+	display: block;
+	margin: 1em auto;
+	width: 100%;
+	opacity: 1.0;
+	line-height: 1em;
+	text-transform: uppercase;
+	letter-spacing: .05rem;
+}
+
+a {
+	color: #fff;
+}
+
+p a{
+	color: #fff;
+	transition: color .7s ease;
+	-webkit-transition: color .7s ease;
+}
+
+span.item-price {
+	font-weight: bold;
+	font-style: italic;
+}
+
+	
+.highlight {
+	color: #ffda39;
+}
+
+.bodycopy p{
+	color: #fff;
+}
+
+.bodycopy a, #bio a{
+	text-decoration: underline;
+	color: #fff;
+}
+
+.italics, em, i {
+	font-style: italic;
+}
+
+.bold, b, strong{
+	font-weight: 600;
+}
+
+#shaker {
+	width: 15%;
+	text-align: center;
+	margin: 0 auto 5% auto;
+	display: block;
+	min-width: 120px;
+}
+
+.bg {
+	width: 100%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.homebody {
+	background-color: #fa8a3b;
+}
+
+#homebg {
+	background-image:url(Images/OpenKitchenBG2C.png);
+}
+
+#menubg {
+	background-image:url(Images/RestaurantLgBgC.png);
+}
+
+#aboutbg {
+	background-image:url(Images/FoodC.png);
+}
+
+#contactbg {
+	background-image:url(Images/Wood-Mockup-BG.jpg);
+	padding: 10% 0% 5% 0%;
+}
+
+.mockup {
+	
+}
+
+.footernav {
+	width: 80%;
+	font-family: "Pathway Gothic One", Verdana, Helvetica, Arial, sans-serif;
+	text-align: center;
+	margin: auto;
+	display: inline;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: .05rem;
+}
+
+footer li{
+	margin-left: 3%;
+	text-align: center;
+}
+
+.subhead {
+	text-align: center;
+	color: #fff;
+	font-family: "Merriweather", "Georgia", "serif";
+	font-weight: 300;
+	font-size: 1rem;
+	margin-top: 1%;
+	line-height: 1.4em;
+	-webkit-transition: color .4s ease;
+	transition: color .4s ease;
+}
+
+.subhead a {
+	color: #fff;
+	-webkit-transition: color .4s ease;
+	transition: color .4s ease;
+}
+
+h5 a:hover, #bio a:hover, #email:hover, a h5:hover, .disclaimer a:hover, p a:hover, .menucolumn a:hover{
+	color: #ffda39;
+}
+
+h2 {
+	text-align: center;
+	font-family: "Pathway Gothic One", Verdana, Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	color: #fff;
+	clear: both;
+	margin: 6% 0% 2% 0%;
+	display: block;
+	line-height: 1.4em;
+	letter-spacing: .05rem;
+}
+
+section#aboutsection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactpage {
+	color: #fff;
+	text-align: center;
+}
+
+
+#menu {
+	font-family: "Merriweather", "Georgia", "serif";
+	width: 100%;
+	margin: auto;
+	overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.menucolumn {
+	width: 29%;
+	color: #fff;
+	margin-top: 2em;
+	overflow: auto;
+	display: block;
+}
+
+.menucolumn:first-of-type{
+	margin-left: 0;
+}
+
+.menucolumn:last-of-type{
+	margin-right: 0;
+}
+.menu-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 5em;
+    justify-content: space-between;
+}
+
+hr {
+	color: #fff;
+}
+
+#bio {
+	width: 100%;
+	margin-bottom: 10%;
+}
+
+#bio h5{
+	text-align: left;
+}
+
+.menuitemtitle {
+	font-size: .9em;
+	margin-bottom: 0;
+}
+
+.icons {
+	width: 25%;
+	text-align: center;
+	margin: auto;
+	display: block;
+	margin-bottom: 15%;
+}
+
+.contact {
+	line-height: 1.4em;
+	margin-top: .6rem;
+	margin-bottom: .6rem;
+}
+
+a h5 {
+	color: #fff;
+	transition: color .7s ease;
+	-webkit-transition: color .7s ease;
+}
+
+.divider {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	letter-spacing: -.2rem;
+}
+
+.disclaimer {
+	max-width: 800px;
+	margin: auto;
+	padding: 2%;
+}
+
+.disclaimer a {
+	color: #fff;
+	text-decoration: underline;
+	-webkit-transition: color .7s ease;
+	transition: color .7s ease;
+}
+
+#hours {
+	margin-top: 15%;
+	margin-bottom: 0;
+}
+
+.smallcaps {
+	font-variant:small-caps;
+}
+
+.timebox {
+	width: 25%;
+	margin: auto;
+	min-width: 280px;
+	text-align: center;
+	color: white;
+}
+
+#hamburger {
+	height: 60px;
+	width: 60px;
+	display:inline;
+	margin: 0% 3% 0% 3%;
+	display: none;
+}
+
+.nav-trigger {
+	position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.mobile {
+	display: block;
+	margin: 6% auto;
+	text-align: left;
+}
+
+#mobilemenu {
+	width: 100%;
+	position: absolute;
+	top: 96px;
+	left: 0;
+	margin: auto;
+	height: auto;
+	background-color: #815e5a;
+	display: none;
+	overflow: auto;
+}
+
+.menu {
+	padding-right: 7%;
+}
+
+nav {
+    display: block;
+    height: 68px;
+    float: right;
+    line-height: 68px;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul {
+	min-width: 360px;
+}
+
+nav ul li {
+	width: auto;
+	display: inline-block;
+}
+
+#backtotop {
+	display: none;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+#backtotop .mobile {
+	margin-bottom: 16px;
+}
+
+#nav-trigger {
+	position: absolute;
+	height: 0;
+	width: 0;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -100;
+}
+
+label {
+	cursor: pointer;
+}
+
+.intro-subhead {
+	font-size: .65rem;
+	line-height: 1em;
+	font-family: "Merriweather", "Georgia", Serif;
+	text-align: center;
+	color: #fff;
+	margin: 0 0 5%;
+}
+
+.thinline {
+	margin-bottom: 8px;
+}
+	
+#chef {
+	margin-bottom: 0;
+}
+
+.chefphoto {
+	display: inline;
+	margin-left: 20px;
+	margin-bottom: 40px;
+	float: right;
+	height: 200px;
+	width: 200px;
+}
+
+.pricetable {
+	font-size: .8em;
+	font-style: italic;
+	text-align: center;
+	line-height: 1.2em;
+	color: white;
+}
+
+form {
+	color: #fff;
+	font-family: "Merriweather", "Georgia", Serif;
+	font-size: .7rem;
+	font-weight: 100;
+	text-decoration: none;
+	margin: auto;
+	width: 80%;
+}
+
+input, textarea {
+	overflow: auto;
+	margin: 0px auto 24px auto;
+	font-family: "Merriweather", "Georgia", Serif;
+	font-size: .7rem;
+}
+
+#contactform {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+#map {
+	margin: 0;
+	margin-top: 48px;
+	width: 40%;
+	height: 400px;
+	padding: 0;
+	text-align: center;
+}
+
+#submitbutton {
+	width: 100px;
+	height: 80px;
+	font-family: "Merriweather", "Georgia", Serif;
+}
+
+#thankyoubg {
+	padding: 10% 0% 10% 0%;
+}
+
+h3 {
+	margin: 5% auto 10% auto;
+	padding: 26px;
+	border: 3px solid #fff;
+	border-radius: 16px;
+	width: 300px;
+	font-family: "Merriweather", "Georgia", "serif";
+	font-weight: 400;
+	font-size: .9rem;
+	color: #fff;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	background-color: #fa8a3b;
+	-webkit-transition: background-color .4s ease, color .4s ease;
+	transition: background-color .4s ease, color .4s ease;
+}
+
+h3:hover {
+	background-color: #fff;
+	color: #fa8a3b
+}
+
+.thankyou-subhead {
+	margin: 0 auto 0 auto;
+	text-align: center;
+	color: #fff;
+}
+
+#email {
+	color: #fff;
+	text-decoration: underline;
+	-webkit-transition: color .4s ease;
+	transition: color .4s ease;
+}
+
+.fineprint {
+	font-size: .5em;
+	text-align: center;
+}
+
+.bigger {
+	font-size: 1.2em;
+	border-top: 1px #fff solid;
+	width: 80%;
+	margin: 5% auto 3% auto;
+	padding-top: 3%;
+}
+
+
+p.backtotop {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+}
+
+.sidebar-added {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sidebar-added section {
+	width: 65%;
+	color: white;
+}
+
+.sidebar-added aside {
+	width: 30%;
+	color: skyblue;
+	background: rgba(255,255,255,.2);
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media (max-width: 959px) {
+	.container {
+		box-sizing: border-box;
+		padding: 0 4%;
+	}
+}
+
+@media (min-width: 960px) {
+	header, footer {
+		padding: 2% 0;
+	}
+}
+
+@media (min-width: 681px) and (max-width: 1000px) {
+	nav ul li a {
+		font-size: 1rem;
+	}
+	.menucolumn {
+		width: 44%;
+		margin: 3%;
+	}
+	h2 {
+		margin-top: 6%;
+	}
+	p, h5 {
+		font-size: .65rem;
+		line-height: 1.3em;
+	}
+	#map {
+		width: 60%;
+	}
+}
+
+
+/* ==================== UP TO 680PX ==================== */
+
+
+@media (max-width: 680px) {
+	#logo {
+		display: inline-block;
+		float: left;
+	}
+	.shifter {
+		width: 100%;
+		margin: 1% auto 1% auto;
+		text-align: center;
+		overflow:visible;
+	}
+	#hamburger {
+		display: block;
+		float: right;
+	}
+	.chefphoto {
+		display: block;
+		float: none;
+		margin: 0 auto 40px;
+		text-align: center;
+		width: 200px;
+	}
+	.original {
+		display: none;
+	}
+	footer li{
+		margin: 40px auto;
+	}
+	.menucolumn {
+		width: 100%;
+		margin: 5% 0 0 0;
+	}
+	h2 {
+		margin-top: 20%;
+	}
+	p, h5 {
+		font-size: .65rem;
+		line-height: 1.6em;
+	}
+	#backtotop, #backtotop .mobile {
+		display: block;
+	}
+	#map {
+		width: 80%;
+	}
+	.intro-subhead {
+		margin-top: 20%;
+	}
+	#thankyoubg {
+		padding: 18% 0% 18% 0%;
+	}
+	nav {
+		display: none;
+	}
+	footer nav {
+		display: block;
+	}
+}
+
+
+/* ==================== UP TO 580PX ==================== */
+
+@media (max-width: 580px) {
+	#map{
+		width: 90%;
+	}
+}
